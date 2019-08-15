@@ -1,0 +1,22 @@
+/**
+ * Auto Generated Java Class.
+ */
+import static org.junit.Assert.*;
+import org.junit.Test;
+public class TerminalUITest {
+  @Test
+  public void promptForDouble(){
+    
+    assertEquals(" promptForDouble(2.51)", 2.51, TerminalUI.promptForDouble(2.51), .01;
+  }
+  
+  @Test
+  public void promptForString()){
+  }
+  
+  @Test
+  public void promptForUnitlessInt(){
+  }
+  /* ADD YOUR CODE HERE */
+  
+}
