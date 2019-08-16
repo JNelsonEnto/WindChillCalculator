@@ -1,19 +1,15 @@
 /**
  * Auto Generated Java Class.
+ *@author Johnathan Nelson Ento
+ *@version August 16, 2018
  */
 import java.util.Scanner;
 public class WindChillCalculator {
   
-  static Scanner in = new Scanner(System.in);
-  
-  
-  
-  
+  static Scanner in = new Scanner(System.in);  
+
   public static void main(String[] args){
     
-    //System.out.Print();
-    //System.out.Print();
-    //String country = new String();
     String units = new String();
     double temperature = 0.0;
     double windSpeed = 0.0;
