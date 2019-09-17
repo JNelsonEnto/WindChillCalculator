@@ -1,15 +1,19 @@
 /**
  * Auto Generated Java Class.
- *@author Johnathan Nelson Ento
- *@version August 16, 2018
  */
 import java.util.Scanner;
 public class WindChillCalculator {
   
-  static Scanner in = new Scanner(System.in);  
-
+  static Scanner in = new Scanner(System.in);
+  
+  
+  
+  
   public static void main(String[] args){
     
+    //System.out.Print();
+    //System.out.Print();
+    //String country = new String();
     String units = new String();
     double temperature = 0.0;
     double windSpeed = 0.0;
@@ -33,8 +37,8 @@ public class WindChillCalculator {
     }
     
     temperature = TerminalUI.promptForDouble(in,"Temperature ", cOrF );
-    windSpeed = TerminalUI.promptForDouble(in," Wind Speed ", units);
-    icao = TerminalUI.promptForString(in, "Station: ");
+    windSpeed = TerminalUI.promptForDouble(in,"Wind Speed ", units);
+    icao = TerminalUI.promptForString(in, "Station:");
    
       if(units == "km/hr")
         windSpeed = Convert.fromKilometersToMiles(windSpeed);
@@ -51,10 +55,12 @@ public class WindChillCalculator {
         windChill = Convert.fromFahrenheitToCelsius(windChill);
     
     
-    System.out.printf("Wind chill for %s: %6.2f %s ",icao, windChill, cOrF );
+    System.out.printf("Wind Chill for %s: %6.2f %s",icao, windChill, cOrF );
     if(danger == true)
-      System.out.print("(Be Careful)");
-    in.close();
+      System.out.print(" (Be careful!)");
+    System.out.print("\n");
+    
+    in.reset();
     }
     
 }
