@@ -1,31 +1,36 @@
 /**
- * Auto Generated Java Class.
+ * Johnathan L. Nelson Ento
+ * Basic Metric Converter
+ * Originally created for windChillCalculator, eventually expanded to encompass metric base conversin
  */
 public class Convert {
   
+//Converts from Celsius to Farenheit
   public static double fromCelsiusToFahrenheit(double c){
     
     return ((9.0/5.0 * c) + 32.0);
   }
-  
+  //Converts from celsius to fahrenheit
   public static double fromFahrenheitToCelsius(double f){
     
     return (f - 32) * (5.0 / 9.0) ;
   }
   
-  
+  //converts from kilometers to miles
   public static double fromKilometersToMiles(double km){
     return km * 0.62137;
   }
-  
+  //converts from miles to kilometers
   public static double fromMilesToKilometers(double mi){
     return mi * 1.609;
   }
   
+  //converts from meters per second to miles per hour
   public static double fromMetersPerSecondToMilesPerHour(double mps){
     return Convert.fromKilometersToMiles((mps * 3600.0 ) / 1000.0);
   }
   
+  //converts from miles to hour to meters per second
   public static double fromMilesPerHourToMetersPerSecond(double mph){
     return ((Convert.fromMilesToKilometers(mph) / 3600) * 1000);
   }
