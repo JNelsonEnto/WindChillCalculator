@@ -53,7 +53,7 @@ public class Convert {
 	  return 0.0;
   }
   public static double mega(double base) {
-	  return 0.0
+	  return 0.0;
   }
   
   
