@@ -50,8 +50,10 @@ public class Convert {
   }
   
   public static double milli(double base) {
+	  return 0.0;
   }
   public static double mega(double base) {
+	  return 0.0
   }
   
   
