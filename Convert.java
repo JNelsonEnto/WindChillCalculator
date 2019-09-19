@@ -35,28 +35,36 @@ public class Convert {
     return ((Convert.fromMilesToKilometers(mph) / 3600) * 1000);
   }
   
+  // metric base * 10
   public static double deca(double base) {
-    return base * Math.pow(10, 1);
-    
+    return base * Math.pow(10, 1); 
   }
+  
+  //metric base / 10
   public static double deci(double base) {
      return base * Math.pow(10, -1);
   }
+  
+  //metric base * 100
   public static double hecto(double base){
      return base * Math.pow(10, 2);
   }
   
+  //metric base / 100
   public static double centi(double base){
      return base * Math.pow(10, -2);
   }
   
+  //metric base * 1000
   public static double kilo(double base){
      return base * Math.pow(10, 3);
   }
   
+  //metric base / 1000000
   public static double milli(double base) {
 	  return 0.0;
   }
+  //metric base * 1000000
   public static double mega(double base) {
 	  return 0.0;
   }
