@@ -22,4 +22,10 @@ public class TerminalUITest {
   }
   /* ADD YOUR CODE HERE */
   
+  @Test
+  public void promptForScientificDouble(){
+    
+    assertEquals(" promptForScientific Double(2.51)", 2.51, TerminalUI.promptScientificDouble(in, "Test"), .01);
+  }
+  
 }
